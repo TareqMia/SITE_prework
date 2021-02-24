@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      Light and Sound Memory Game
+    </h1>
+    <h3>Let's play a game 👀</h3>
+
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing the buttons.
+    </p>
+
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+
+    <button class="hidden" id="stopBtn" onclick="stopGame()">
+      Stop
+    </button>
+
+    <div class="ui container" id="gameButtonArea">
+      <button
+        class="ui button"
+        id="button0"
+        onmousedown="startTone(0)"
+        onmouseup="stopTone()"
+        onclick="guess(0)"
+      >
+        1
+      </button>
+      <button
+        class="ui button"
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+      >
+        2
+      </button>
+      <button
+        class="ui button"
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      >
+        3
+      </button>
+      <button
+        class="ui button"
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      >
+        4
+      </button>
+      <button
+        class="ui button"
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      >
+        5
+      </button>
+      <button
+        class="ui button"
+        id="button5"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        onclick="guess(5)"
+      >
+        6
+      </button>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
