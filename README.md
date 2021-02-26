@@ -1,5 +1,10 @@
 Name: **Tareq Mia**
 
+The CodePath submission was not working for me, so here are the links to the project:
+
+[Live Site](https://glitch.com/edit/#!/reliable-puffy-heron) <br>
+[Code](https://glitch.com/edit/#!/reliable-puffy-heron)
+
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
     - Stackoverflow
